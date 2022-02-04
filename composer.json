@@ -1,0 +1,27 @@
+{
+	"name": "sharkydog/async-parralel",
+	"description": "Asynchronous PHP execution with parallel extension",
+	"homepage": "https://github.com/sharkydog",
+	"authors": [
+		{
+			"name": "Aleksandar Dimitrov",
+			"email": "admin@sharkydog.info",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"sharkydog/async": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"SharkyDog\\Async\\Parallel\\": "src/"
+		}
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "sharkydog@server-vm-shd:git/sharkydog-async.git"
+		}
+	]
+}
