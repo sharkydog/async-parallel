@@ -11,6 +11,8 @@
 	],
 	"require": {
 		"php": "^7.4",
+		"php-zts": "*",
+		"ext-parallel": "*",
 		"sharkydog/async": "dev-master"
 	},
 	"autoload": {
