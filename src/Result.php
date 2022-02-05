@@ -11,9 +11,6 @@ class Result extends Async\Result {
 		$this->result = $result;
 		$this->worker = $worker;
 	}
-	public function __destruct() {
-		ppn('destruct: '.static::class);
-	}
 	
 	protected function _done(): bool {
 		return $this->result->done();

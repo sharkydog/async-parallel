@@ -17,9 +17,10 @@ class Worker extends Async\Worker {
 		if($bootstrap === false) $bootstrap = null;
 		$this->thread = new parallel\Runtime($bootstrap);
 	}
+	
 	public function __destruct() {
 		if($this->thread) $this->thread->kill();
-		ppn('destruct: '.static::class);
+		parent::__destruct();
 	}
 	
 	protected function _run(\Closure $task, array $argv=[]): Async\Result {
