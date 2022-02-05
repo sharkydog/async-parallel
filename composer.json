@@ -1,7 +1,7 @@
 {
 	"name": "sharkydog/async-parallel",
 	"description": "Asynchronous PHP execution with parallel extension",
-	"homepage": "https://github.com/sharkydog",
+	"homepage": "https://github.com/sharkydog/async-parallel",
 	"authors": [
 		{
 			"name": "Aleksandar Dimitrov",
