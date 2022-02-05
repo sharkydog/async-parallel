@@ -1,5 +1,5 @@
 {
-	"name": "sharkydog/async-parralel",
+	"name": "sharkydog/async-parallel",
 	"description": "Asynchronous PHP execution with parallel extension",
 	"homepage": "https://github.com/sharkydog",
 	"authors": [
@@ -19,11 +19,5 @@
 		"psr-4": {
 			"SharkyDog\\Async\\Parallel\\": "src/"
 		}
-	},
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "sharkydog@server-vm-shd:git/sharkydog-async.git"
-		}
-	]
+	}
 }
