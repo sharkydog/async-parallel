@@ -1,6 +1,5 @@
 <?php
 use SharkyDog\Async\Parallel\Worker;
-//SharkyDog\Async\Debug::init(3);
 
 // results can be retrieved either with Result::onDone() callback
 // or after Result::done() returns true
