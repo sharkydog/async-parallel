@@ -14,8 +14,11 @@ class Worker extends Async\Worker {
 	
 	public function __construct($bootstrap=null) {
 		if($bootstrap === null) $bootstrap = self::$defaultBootstrap;
-		if($bootstrap === false) $bootstrap = null;
-		$this->thread = new parallel\Runtime($bootstrap);
+		if($bootstrap) {
+			$this->thread = new parallel\Runtime($bootstrap);
+		} else {
+			$this->thread = new parallel\Runtime();
+		}
 	}
 	
 	public function __destruct() {
